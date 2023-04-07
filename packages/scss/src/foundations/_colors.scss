@@ -1,0 +1,56 @@
+
+/*=============================================
+=            foundation color                 =
+=============================================*/
+
+
+/**
+ *
+ *this file defines the actual color that will be used for styling. they will default to the palate
+ *we defined in the _variables.scss file . This is our default palate and devs can change this with
+ *their variables.
+ */
+
+
+
+/*=============================================
+=            global text color                 =
+=============================================*/
+
+
+/**
+ *
+ * defining a scss variable
+ 1. define a name
+ 2.value of the variable will be a css var,so the customer of the system won't need to use scss
+ 3.default value will be scss variable that we declared earlier.
+ 4.added !default flag. so customers of of the design system will be able to override scss var.
+ 5.the --dse prefix  of the variable name is the namespace(project name)
+ [dse->design system for engineering]
+ */
+
+ 
+ /*=============================================
+ =            global text color                  =
+ =============================================*/
+ 
+ $body-text-color: var(--dse-body-text-color, $dark)!default;
+ $body-bg-color: var(--dse-body-bg-color, $white)!default;
+
+ /*=====  End of global text color  ======*/
+
+ 
+ /*=============================================
+ =            button color            =
+ =============================================*/
+ $btn-primary-color:var(--dse-btn-primary-color,$dark)!default;
+ $btn-primary-bg-color:var(--dse-btn-primary-bg-color,$blue)!default;
+ $btn-primary-hover-color:var(--dse-btn-primary-hover-color,$green-light)!default
+ 
+ /*=====  End of button color  ======*/
+ 
+ 
+
+
+ 
+ 

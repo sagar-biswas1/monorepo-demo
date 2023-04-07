@@ -1,0 +1,126 @@
+/*---------------------------*\
+        Variables
+\*---------------------------*/
+/**
+* Table of Contents
+
+
+* ----------------------------FOUND FROM STYLE GUIDES--------------------------------------
+* Colors
+-Brand colors-------these are the main brand colors that are used most.
+-Neutral colors ------ white and black ,grayscale colors and primary colors
+-Utility colors ----- other colors to represent secondary,info,warning etc.
+
+
+* TYPOGRAPHY
+-Font families
+-Font weight
+-Sizes
+-Heading sizes
+
+
+* BREAKPOINTS
+-Breakpoints----- Global breakpoints definitions.
+
+
+* Spacing 
+- Spacing ------Global fixed set of spacing variables.
+*/
+/*=============================================
+=            Color                            =
+=============================================*/
+/* brand colors*/
+/* neutral colors*/
+/* utility colors*/
+/* end of colors */
+/*=============================================
+=            Typography                       =
+=============================================*/
+/* font families */
+/*----------  
+1. playfair will be mostly used in headings. link:[]
+2. railway font will be used for body styles. link:[]
+----------*/
+/*1*/
+/*2*/
+/* font sizes */
+/* heading font sizes */
+/* font weight */
+/* end of typography */
+/*=============================================
+=            breakoints                       =
+=============================================*/
+/*=====  End of breakoints             ======*/
+/*=============================================
+=            foundation color                 =
+=============================================*/
+/**
+ *
+ *this file defines the actual color that will be used for styling. they will default to the palate
+ *we defined in the _variables.scss file . This is our default palate and devs can change this with
+ *their variables.
+ */
+/*=============================================
+=            global text color                 =
+=============================================*/
+/**
+ *
+ * defining a scss variable
+ 1. define a name
+ 2.value of the variable will be a css var,so the customer of the system won't need to use scss
+ 3.default value will be scss variable that we declared earlier.
+ 4.added !default flag. so customers of of the design system will be able to override scss var.
+ 5.the --dse prefix  of the variable name is the namespace(project name)
+ [dse->design system for engineering]
+ */
+/*=============================================
+=            global text color                  =
+=============================================*/
+/*=====  End of global text color  ======*/
+/*=============================================
+=            button color            =
+=============================================*/
+/**
+ *
+ * this file defines default font size to be used in heading and text. The defaults come from the variables declared in _variables.scss file.
+ *
+ */
+/*=============================================
+=                 body font family            =
+=============================================*/
+/*=====  End of body font family  ======*/
+/*=============================================
+=                 body font size             =
+=============================================*/
+/*=====  End of body font size   ======*/
+/*=============================================
+=            heading font size                =
+=============================================*/
+/*=====  End of heading font size      ======*/
+/* MIXINS */
+/**
+ *
+ * helpful reusable function like things that will be used to implement style for components.
+ *
+ */
+.dse-text {
+  margin: 0;
+  font-family: var(--dse-body-font-family, "Railway", sarif);
+  color: var(--dse-body-text-color, black);
+}
+
+.dse-text-base {
+  font-size: 1rem;
+}
+
+.dse-text-lg {
+  font-size: 1.25rem;
+}
+
+.dse-text-sm {
+  font-size: 0.875rem;
+}
+
+.dse-text-xs {
+  font-size: 0.75rem;
+}

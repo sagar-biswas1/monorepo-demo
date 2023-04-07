@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/*---------------------------*\
+        table of contents
+\*---------------------------*/
+/**
+*
+*Foundation----------
+*Base----------------
+*
+*/
+/*---------------------------*\
+        Foundation
+\*---------------------------*/
+/*---------------------------*\
+        Variables
+\*---------------------------*/
+/**
+* Table of Contents
+
+
+* ----------------------------FOUND FROM STYLE GUIDES--------------------------------------
+* Colors
+-Brand colors-------these are the main brand colors that are used most.
+-Neutral colors ------ white and black ,grayscale colors and primary colors
+-Utility colors ----- other colors to represent secondary,info,warning etc.
+
+
+* TYPOGRAPHY
+-Font families
+-Font weight
+-Sizes
+-Heading sizes
+
+
+* BREAKPOINTS
+-Breakpoints----- Global breakpoints definitions.
+
+
+* Spacing 
+- Spacing ------Global fixed set of spacing variables.
+*/
+/*=============================================
+=            Color                            =
+=============================================*/
+/* brand colors*/
+/* neutral colors*/
+/* utility colors*/
+/* end of colors */
+/*=============================================
+=            Typography                       =
+=============================================*/
+/* font families */
+/*----------  
+1. playfair will be mostly used in headings. link:[]
+2. railway font will be used for body styles. link:[]
+----------*/
+/*1*/
+/*2*/
+/* font sizes */
+/* heading font sizes */
+/* font weight */
+/* end of typography */
+/*=============================================
+=            breakoints                       =
+=============================================*/
+/*=====  End of breakoints             ======*/
+/*=============================================
+=            foundation color                 =
+=============================================*/
+/**
+ *
+ *this file defines the actual color that will be used for styling. they will default to the palate
+ *we defined in the _variables.scss file . This is our default palate and devs can change this with
+ *their variables.
+ */
+/*=============================================
+=            global text color                 =
+=============================================*/
+/**
+ *
+ * defining a scss variable
+ 1. define a name
+ 2.value of the variable will be a css var,so the customer of the system won't need to use scss
+ 3.default value will be scss variable that we declared earlier.
+ 4.added !default flag. so customers of of the design system will be able to override scss var.
+ 5.the --dse prefix  of the variable name is the namespace(project name)
+ [dse->design system for engineering]
+ */
+/*=============================================
+=            global text color                  =
+=============================================*/
+/*=====  End of global text color  ======*/
+/*=============================================
+=            button color            =
+=============================================*/
+/**
+ *
+ * this file defines default font size to be used in heading and text. The defaults come from the variables declared in _variables.scss file.
+ *
+ */
+/*=============================================
+=                 body font family            =
+=============================================*/
+/*=====  End of body font family  ======*/
+/*=============================================
+=                 body font size             =
+=============================================*/
+/*=====  End of body font size   ======*/
+/*=============================================
+=            heading font size                =
+=============================================*/
+/*=====  End of heading font size      ======*/
+/* MIXINS */
+/**
+ *
+ * helpful reusable function like things that will be used to implement style for components.
+ *
+ */
+/*---------------------------*\
+        Base
+\*---------------------------*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ *
+ * !default css variables
+ *as scss is not compatible with css, we need embed this variables.
+ */
+:root {
+  --dse-body-text-color: black;
+  --dse-body-bg-color:#FFFFFF;
+  --dse-btn-primary-color: #FFFFFF;
+  --dse-btn-primary-bg: rgb(176, 236, 176);
+  --dse-btn-primary-bg-hover: rgb(204, 236, 204);
+  --dse-btn-secondary-color: #FFFFFF;
+  --dse-btn-secondary-bg: black;
+  --dse-form-color: black;
+  --dse-form-bg: #FFFFFF;
+  --dse-form-error-color: #FF0000;
+  --dse-form-error-border: #FF0000;
+  --dse-form-border-focus-color: rgb(176, 236, 176);
+  --dse-body-font-size: 1rem;
+  --dse-body-font-weight: 400;
+  --dse-h1-font-size: 1.5rem;
+  --dse-h2-font-size: 1.25rem;
+  --dse-h3-font-size: 1rem;
+  --dse-h4-font-size: 0.75rem;
+  --dse-h1-font-weight: 500;
+  --dse-h2-font-weight: 500;
+  --dse-h3-font-weight: 500;
+  --dse-h4-font-weight: 400;
+  --dse-h5-font-weight: 400;
+  --dse-h6-font-weight: 300;
+}

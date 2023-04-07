@@ -1,0 +1,40 @@
+
+/**
+ *
+ * !default css variables
+ *as scss is not compatible with css, we need embed this variables.
+ */
+
+ :root{
+    --dse-body-text-color: #{$dark};
+    --dse-body-bg-color:#{$white};
+    // we need to add rest of the variables here
+    --dse-btn-primary-color: #{$white};
+	--dse-btn-primary-bg: #{$green};
+	--dse-btn-primary-bg-hover: #{$green-light};
+
+	--dse-btn-secondary-color: #{$white};
+	--dse-btn-secondary-bg: #{$dark};
+
+	--dse-form-color: #{$dark};
+	--dse-form-bg: #{$white};
+	--dse-form-error-color: #{$red};
+	--dse-form-error-border: #{$red};
+	--dse-form-border-focus-color: #{$green};
+
+	--dse-body-font-size: #{$fs-base};
+	--dse-body-font-weight: #{$font-weight-normal};
+
+	--dse-h1-font-size: #{$h-1};
+	--dse-h2-font-size: #{$h-2};
+	--dse-h3-font-size: #{$h-3};
+	--dse-h4-font-size: #{$h-4};
+	
+
+	--dse-h1-font-weight: #{$font-weight-medium};
+	--dse-h2-font-weight: #{$font-weight-medium};
+	--dse-h3-font-weight: #{$font-weight-medium};
+	--dse-h4-font-weight: #{$font-weight-normal};
+	--dse-h5-font-weight: #{$font-weight-normal};
+	--dse-h6-font-weight: #{$font-weight-light};
+ }

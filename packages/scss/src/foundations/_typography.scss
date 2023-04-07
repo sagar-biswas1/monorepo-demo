@@ -1,0 +1,38 @@
+
+/**
+ *
+ * this file defines default font size to be used in heading and text. The defaults come from the variables declared in _variables.scss file.
+ *
+ */
+
+
+/*=============================================
+=                 body font family            =
+=============================================*/
+
+$body-font-family:var(--dse-body-font-family, $railway)!default;
+
+/*=====  End of body font family  ======*/
+
+
+/*=============================================
+=                 body font size             =
+=============================================*/
+
+$body-font-size:var(--dse-body-font-size, $fs-sm)!default;
+$body-font-weight:var(--dse-body-font-weight, $font-weight-bold)!default;
+
+/*=====  End of body font size   ======*/
+
+
+/*=============================================
+=            heading font size                =
+=============================================*/
+
+$h-1-font-size:var(--dse-h1-font-size, $h-1)!default; 
+$h-2-font-size:var(--dse-h2-font-size, $h-2)!default; 
+$h-3-font-size:var(--dse-h3-font-size, $h-3)!default; 
+$h-4-font-size:var(--dse-h4-font-size, $h-4)!default; 
+
+/*=====  End of heading font size      ======*/
+
